@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://bankai.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_dd4ba17304604f6a9b22d5392d296ff2 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_84d2927eaa244207966c17148ca5f2f5 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_379aa0e334134efbacf047fbbeae15e0 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_345c05e8f57c4308807058b1d96eab1c }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: bankai.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_dd4ba17304604f6a9b22d5392d296ff2 }}/portfolio:${{ github.sha }}
+        tags: bankai.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_379aa0e334134efbacf047fbbeae15e0 }}/portfolio:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'avnishmishra'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_38c1689709664f488157323c3d170a94 }}
-        images: 'bankai.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_dd4ba17304604f6a9b22d5392d296ff2 }}/portfolio:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_b564a252a02c40b793265fcd667ce572 }}
+        images: 'bankai.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_379aa0e334134efbacf047fbbeae15e0 }}/portfolio:${{ github.sha }}'
