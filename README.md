@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Avnish</h1>
 <h3 align="center">"Innovative Data Scientist and AI Enthusiast | Harnessing Advanced Analytics and Cutting-edge AI for Impactful Solutions" from India</h3>
 
-- 👨‍💻 All of my projects are available at [https://bankaixhunter.azurewebsites.net/](https://bankaixhunter.azurewebsites.net/)
+- 👨‍💻 All of my projects are available at [https://avnishmishra.azurewebsites.net/](https://avnishmishra.azurewebsites.net/)
 
 - 📝 I regularly write articles on [https://medium.com/@bankaixhunter](https://medium.com/@bankaixhunter)
 
